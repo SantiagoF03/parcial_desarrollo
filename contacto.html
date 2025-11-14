@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha personal - Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="contenedor">
+    <header class="header">
+        <div class="header-superior">
+            <div>
+                <h1>Ficha Personal</h1>
+                <p>Perfil de Estudiante</p>
+            </div>
+            <button id="boton-modo" class="boton-modo" aria-label="Cambiar modo claro/oscuro">
+                🌙
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="perfil">
+            <div class="perfil-foto">
+                <img src="img/foto-perfil.jpg" alt="Foto de Santiago Ferreyra">
+            </div>
+
+            <div class="perfil-info">
+                <h2 class="perfil-nombre">Santiago Ferreyra</h2>
+
+                <nav class="menu">
+                    <a href="index.html" class="btn-menu">HOME</a>
+                    <a href="https://santiagof03.github.io/local_videojuegos/" target="_blank" rel="noopener noreferrer" class="btn-menu">Local Comercial</a>
+                    <a href="https://santiagof03.github.io/trabajo_Viernes/" target="_blank" rel="noopener noreferrer" class="btn-menu">Fan Page</a>
+                    <a href="contacto.html" class="btn-menu activo">Contacto</a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h2>Contacto</h2>
+
+            <form id="form-contacto" class="form-contacto" novalidate>
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <small class="mensaje-error" id="error-nombre"></small>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <small class="mensaje-error" id="error-email"></small>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+                    <small class="mensaje-error" id="error-comentarios"></small>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Todos los derechos reservados</p>
+        <a href="https://github.com/SantiagoF03/parcial_desarrollo" target="_blank" rel="noopener noreferrer" class="btn-github">
+            Ver en GitHub
+        </a>
+    </footer>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
